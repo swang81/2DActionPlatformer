@@ -2,6 +2,8 @@
 
 Developed with Unreal Engine 5
 
+Character
+
 ```mermaid
 ---
 title: character
@@ -17,3 +19,20 @@ classDiagram
 
 
 ```
+
+
+Projectile
+
+```mermaid
+---
+title: projectile
+---
+classDiagram
+BP_Projectile_BASE <|-- BP_PlayerProjectile_BASE
+BP_Projectile_BASE <|-- BP_EnemyProjectile_BASE
+BP_PlayerProjectile_BASE <|-- BP_PlayerProjectile_Regular
+BP_PlayerProjectile_BASE <|-- BP_PlayerProjectile_PartialCharge
+BP_PlayerProjectile_BASE <|-- BP_PlayerProjectile_FullCharge
+BP_EnemyProjectile_BASE <|-- BP_EnemyProjectile_Lizard
+```
+
